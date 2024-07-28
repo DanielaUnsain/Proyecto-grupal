@@ -51,21 +51,6 @@ El código HTML de la página comienza con la estructura básica de un documento
 - Enlaces a los archivos JavaScript de Popper.js y Bootstrap, necesarios para algunas funcionalidades de Bootstrap.
 - Un archivo de scripts personalizado (`scripts.js`) para cualquier funcionalidad adicional que necesite la página.
 
-## Instalación
-
-1. Clonar el repositorio:
-    ```sh
-    git clone https://github.com/tu-usuario/peluqueria-barberia.git
-    ```
-2. Abrir el archivo `index.html` en tu navegador preferido.
-
-## Uso
-
-- Navegar por la página utilizando el menú de navegación.
-- Explorar los servicios destacados y los métodos de pago disponibles.
-- Contactar a la peluquería/barbería a través de los enlaces de redes sociales.
-
-
 Este código CSS tiene varias partes importantes que podemos analizar para entender cómo da estilo a una página web.
 
 Primero, hay un **reset** al inicio. Esto significa que se eliminan los márgenes y los rellenos de todos los elementos con `* { margin: 0; padding: 0; box-sizing: border-box; }`. Esto ayuda a asegurar que todos los elementos tengan el mismo punto de partida en cuanto a diseño.
@@ -91,7 +76,45 @@ Finalmente, hay estilos para **modos oscuro y claro**. En el modo oscuro, el fon
 Este código muestra cómo se puede crear una página web atractiva y funcional con CSS, ajustando elementos y colores para mejorar la experiencia del usuario en diferentes dispositivos y modos de visualización.
 
 
+Este código JavaScript es para alternar entre el modo oscuro y claro en una página web cuando se hace clic en un botón. Vamos a desglosarlo y explicar cada parte.
 
+Primero, obtenemos el botón que activa el modo oscuro mediante `document.getElementById('toggleDarkMode')`. Luego, añadimos un evento `click` a este botón para que ejecute una función cuando se haga clic en él.
+
+Dentro de esta función, se obtienen varios elementos de la página usando `getElementById` y `getElementsByClassName`. Estos elementos son:
+
+- `body`: El cuerpo de la página.
+- `header`: El encabezado de la página.
+- `footer`: El pie de página.
+- `pfooter` y `pfooter1`: Párrafos dentro del pie de página.
+- `sessions`: Elementos con la clase `session`.
+- `textos`: Elementos con la clase `dark-text`.
+
+La primera acción dentro de la función es alternar la clase `dark-mode` en el `body`. Esto cambia el estilo del cuerpo de la página para modo oscuro o claro.
+
+Luego, se revisa si el `footer` tiene la clase `bg-light` (fondo claro). Si es así, se reemplaza por `bg-dark` (fondo oscuro). Si no, se hace el cambio inverso. Esto permite cambiar el color de fondo del pie de página.
+
+Después, se hace lo mismo con los párrafos `pfooter` y `pfooter1`, alternando entre `text-dark` (texto oscuro) y `text-light` (texto claro) para cambiar el color del texto.
+
+Para el `header`, se alternan varias clases: `navbar-light`, `bg-light`, `navbar-dark`, y `bg-dark`. Esto ajusta tanto el color de fondo como el estilo del texto del encabezado.
+
+Finalmente, se usa un bucle `for` para recorrer todos los elementos con la clase `session` y alternar la clase `section-dark`. Esto permite aplicar el modo oscuro a varias secciones de la página.
+
+En resumen, este código permite cambiar entre el modo oscuro y claro en una página web al hacer clic en un botón, ajustando dinámicamente los estilos de varios elementos clave como el cuerpo, el encabezado, el pie de página, y las secciones, para mejorar la experiencia del usuario.
+
+## Instalación
+
+1. Clonar el repositorio:
+    ```sh
+    git clone https://github.com/tu-usuario/peluqueria-barberia.git
+    ```
+2. Abrir el archivo `index.html` en tu navegador preferido.
+
+## Uso
+
+- Navegar por la página utilizando el menú de navegación.
+- Explorar los servicios destacados y los métodos de pago disponibles.
+- Contactar a la peluquería/barbería a través de los enlaces de redes sociales.
+- 
 
 
 
