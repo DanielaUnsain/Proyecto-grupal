@@ -31,7 +31,7 @@
 
 
 /**********SECCION PRODUCTOS*************/
-#card-jeans, #card-chomba, #card-remera {margin-bottom: 1rem;}
+#card-corte, #card-coloracion, #card-nupcial {margin-bottom: 1rem;}
 #productos-titulo {  padding: 1rem;}
 #productos-modal .btn {display:block; margin-left: auto; margin-right: auto;}
 #productos-modal .btn, .color-personalizado {background-color: var(--secondary); border: none;}
