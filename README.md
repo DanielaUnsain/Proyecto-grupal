@@ -114,7 +114,6 @@ En resumen, este código permite cambiar entre el modo oscuro y claro en una pá
 - Navegar por la página utilizando el menú de navegación.
 - Explorar los servicios destacados y los métodos de pago disponibles.
 - Contactar a la peluquería/barbería a través de los enlaces de redes sociales.
-- 
 
 
 
