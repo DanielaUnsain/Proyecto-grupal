@@ -21,6 +21,7 @@ Git
 Entrega del Proyecto
 - Desarrollo del sitio web completo, incluyendo frontend responsivo y optimizado para distintos dispositivos y orientaciones.
 - Documentación del código que explique la estructura del proyecto, las decisiones de diseño y las funcionalidades implementadas.
+- 
 - Implementación de Git para el control de versiones del código y la colaboración entre los miembros del equipo.
  
 Resolución:
@@ -63,3 +64,43 @@ El código HTML de la página comienza con la estructura básica de un documento
 - Navegar por la página utilizando el menú de navegación.
 - Explorar los servicios destacados y los métodos de pago disponibles.
 - Contactar a la peluquería/barbería a través de los enlaces de redes sociales.
+
+
+Este código CSS tiene varias partes importantes que podemos analizar para entender cómo da estilo a una página web.
+
+Primero, hay un **reset** al inicio. Esto significa que se eliminan los márgenes y los rellenos de todos los elementos con `* { margin: 0; padding: 0; box-sizing: border-box; }`. Esto ayuda a asegurar que todos los elementos tengan el mismo punto de partida en cuanto a diseño.
+
+Luego, se definen algunas **variables de colores** usando `:root`. Las variables como `--primary`, `--secondary` y `--bg` permiten que estos colores se usen fácilmente en toda la hoja de estilos, asegurando consistencia. Por ejemplo, `--primary` es un color morado oscuro y `--bg` es un color de fondo verde claro.
+
+Después, se estiliza la **barra de navegación**. La clase `.navbar-light .navbar-toggler` usa `var(--text-white)` para el color de borde y el fondo. También hay un ajuste para `#navbarNav` que distribuye los elementos de forma uniforme y los alinea.
+
+Para evitar que el contenido de la página se superponga con la barra de navegación, se añade `padding-top: 5rem;` a las secciones `#nosotros-top`, `#productos-top`, `#pregunta-frecuentes-top`, y `#contacto-top`.
+
+En la **sección de productos**, los elementos como `#card-corte`, `#card-coloracion`, y `#card-nupcial` tienen un margen inferior para separarlos unos de otros. Además, el botón en el modal de productos se centra y cambia de color al pasar el ratón sobre él.
+
+Se incluyen **media queries** para ajustar el diseño según el tamaño de la pantalla. Por ejemplo, para pantallas medianas y grandes, los cuerpos de las tarjetas (`.card-body`) tienen una altura mínima específica, y las imágenes en el carrusel se ajustan para no exceder el tamaño de la ventana.
+
+Para dispositivos pequeños, como teléfonos, `.fotos-masonry` se oculta con `display: none;`.
+
+En el **footer**, los enlaces cambian de fondo al pasar el ratón sobre ellos y los elementos se alinean de manera específica.
+
+El diseño también incluye una **animación** llamada `scroll` que hace que un elemento se desplace horizontalmente de manera infinita, aplicado a una clase `.slider` que contiene elementos `.slide`.
+
+Finalmente, hay estilos para **modos oscuro y claro**. En el modo oscuro, el fondo y el texto se ajustan a colores oscuros y claros respectivamente, y en el modo claro, se usan colores más claros para el fondo y más oscuros para el texto.
+
+Este código muestra cómo se puede crear una página web atractiva y funcional con CSS, ajustando elementos y colores para mejorar la experiencia del usuario en diferentes dispositivos y modos de visualización.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
