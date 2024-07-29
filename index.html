@@ -17,28 +17,36 @@
   <body>
     <!----HEADER----->
     <header id="encabezado">
-      <nav  id="navbar" class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top">
+      <!-- <nav  id="navbar" class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top"> -->
+        <nav id="navbar" class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top" aria-label="Main navigation">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><span>
+          <!-- <a class="navbar-brand" href="index.html"><span> -->
+          <a class="navbar-brand" href="index.html" aria-label="Inicio"></a>
           	<img src="#" alt="logo" >
               </span>
             </a>
+          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#">NOSOTROS</a>
+                <!-- <a class="nav-link" href="#footer">NOSOTROS</a> -->
+                <a class="nav-link" href="#footer" aria-label="Ir a Nosotros">NOSOTROS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#productos-top">PRODUCTOS DESTACADOS</a>
+                <!-- <a class="nav-link" href="#productos-top">PRODUCTOS DESTACADOS</a> -->
+                <a class="nav-link" href="#productos-top" aria-label="Ir a Productos Destacados">PRODUCTOS DESTACADOS</a>
               </li>
               <li>
-                <a class="nav-link" href="categorias.html">CATEGORIAS</a>
+                <!-- <a class="nav-link" href="categorias.html">CATEGORIAS</a> -->
+                <a class="nav-link" href="categorias.html" aria-label="Ir a Categorías">CATEGORIAS</a>
               </li>
               <li>
-                <a class="nav-link" href="contacto.html">CONTACTO</a>
+                <!-- <a class="nav-link" href="#footer">CONTACTO</a> -->
+                <a class="nav-link" href="#footer" aria-label="Ir a Contacto">CONTACTO</a>
               </li>
             </ul>
           </div>
@@ -49,11 +57,13 @@
      <!-----------CARRUSEL FOTOS----------->
      <section id="slider-fotos" class="container session" style="margin-top:62px;">
      	       <div class="d-flex justify-content-end">
-      	        <button id="toggleDarkMode" class="btn btn-secondary ml-3" >Claro/Oscuro</button>
+      	        <!-- <button id="toggleDarkMode" class="btn btn-secondary ml-3" >Claro/Oscuro</button> -->
+                <button id="toggleDarkMode" class="btn btn-secondary ml-3" aria-label="Cambiar modo claro/oscuridad">Claro/Oscuro</button>
       </div>
       <div class="row">
         <div class="col-sm-12">
-          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel"> -->
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" aria-roledescription="carousel"></div>
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="./assets/media/img/salon.jpg" style="width:640px; height:298px;" class="d-block w-100" alt="imagen interior salon peluqueria/barberia" >
@@ -65,11 +75,13 @@
                 <img src="./assets/media/img/black-2951012_1280.webp" style="width:640px; height:298px;" class="d-block w-100" alt="imagen friday black" >
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev"> -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" aria-label="Anterior">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <!-- <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"> -->
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" aria-label="Siguiente">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
@@ -81,7 +93,8 @@
     <section id="productos-top" class="container session">
       <section id="productos-titulo" class="row session">
         <div class="col-sm-12">
-          <h2 class="text-center text-lower"><i>Nuestros Productos Destacados</i></h2>
+          <!-- <h2 class="text-center text-lower"><i>Nuestros Productos Destacados</i></h2> -->
+          <h2 class="text-center text-lower" aria-label="Productos Destacados"><i>Nuestros Productos Destacados</i></h2>
         </div>
       </section>
       <!--Inicio de las cards-->
@@ -89,7 +102,8 @@
         <!--Card-->
         <div id="card-corte" class="col-md-4 col-sm-12">
           <div class="card linkear session">
-            <a href="barberiaprod.html">
+            <a href="barberiaprod.html" aria-label="Afeitado a Navaja: Elegancia y Precisión"></a>
+            <!-- <a href="barberiaprod.html"> -->
               <img src="./assets/media/img/CorteNavaja.jpg" class="card-img-top img-thumbnail" alt="imagen afeitando a navaja">
             </a>
             <div class="card-body">
@@ -102,7 +116,8 @@
         <!--Card-->
         <div id="card-nupcial" class="col-md-4 col-sm-12">
           <div class="card linkear session">
-            <a href="peinadosprod.html">
+            <!-- <a href="peinadosprod.html"> -->
+              <a href="peinadosprod.html" aria-label="Peinado de novia: Estilo Nupcial Sofisticado">
 
               <img src="./assets/media/img/Nupcial.jpg" class="card-img-top img-thumbnail" alt="imagen peinado de novia">
             </a>
@@ -117,7 +132,9 @@
          <!--Card-->
         <div id="card-coloracion" class="col-md-4 col-sm-12">
           <div class="card linkear session">
-            <a href="coloracionprod.html"> <img src="./assets/media/img/Coloracion.jpg" class="card-img-top img-thumbnail" alt="imagen coloracion al pelo"></a>
+            <a href="coloracionprod.html" aria-label="Coloración: Nivel Profesional">
+            <!-- <a href="coloracionprod.html"> -->
+               <img src="./assets/media/img/Coloracion.jpg" class="card-img-top img-thumbnail" alt="imagen coloracion al pelo"></a>
             <div class="card-body">
               <h4 class="card-title text-center"><span><b style="text-align: justify;">Coloración:</b></span><br>Nivel Profesional </h4>
               <p class="card-text" style="text-align: justify;"> Transforma tu look con nuestra coloración de pelo profesional, adaptada a tu estilo único.
@@ -131,7 +148,8 @@
     <!--Fin de Productos-->
     
       <!--Fotos con efecto masonry-->
-        <section class="paypal session">
+        <!-- <section class="paypal session"> -->
+          <section class="paypal session" aria-label="Medios de pago"></section>
           <div class="slider">
               <div class="slide-track">
                   <div class="slide">
@@ -225,7 +243,8 @@
           <!--Fin fotos con efecto masonry-->
     	
         <!-- Footer -->
-    <footer id="footer" class="footer mt-auto py-3 bg-light">
+    <footer id="footer" class="footer mt-auto py-3 bg-light" aria-label="Pie de página">
+     
     	<!--
     <footer class="footer mt-5 p-3">
     	-->
@@ -233,8 +252,9 @@
 
             <ul class="list-unstyled">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#footer">Nosotros</a></li>
+                <li><a href="#productos-top">Productos destacados</a></li>
+                <li><a href="#footer">Contacto</a></li>
             </ul>
             <div>
             	    <p id="pe" class="text-dark">Síguenos en nuestras redes. </p>
@@ -270,4 +290,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
     <script src="./assets/js/scripts.js"></script>
   </body>
-</html>
+              </html>
