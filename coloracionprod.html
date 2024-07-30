@@ -17,9 +17,9 @@
   <body>
     <!----HEADER----->
     <header id="encabezado">
-      <nav  id="navbar" class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top">
+      <nav  id="navbar" class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top" aria-label="Main Navigation">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><span>
+          <a class="navbar-brand" href="index.html" aria-label="Inicio"><span>
           	<img src="#" alt="logo" >
               </span>
             </a>
@@ -29,16 +29,16 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#">NOSOTROS</a>
+                <a class="nav-link" href="#footer" aria-label="Ir a Pie de Pagina">NOSOTROS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#productos-top">PRODUCTOS DESTACADOS</a>
+                <a class="nav-link" href="#productos-top" aria-label="Ir a Productos Destacados">PRODUCTOS DESTACADOS</a>
               </li>
               <li>
-                <a class="nav-link" href="categorias.html">CATEGORIAS</a>
+                <a class="nav-link" href="categorias.html" aria-label="Ir a Categorias">CATEGORIAS</a>
               </li>
               <li>
-                <a class="nav-link" href="contacto.html">CONTACTO</a>
+                <a class="nav-link" href="contacto.html" aria-label="Ir a Contactos">CONTACTO</a>
               </li>
             </ul>
           </div>
@@ -52,7 +52,7 @@
       <section id="productos-titulo" class="row session">
         <div class="col-sm-12">
             <button id="toggleDarkMode" class="btn btn-secondary ml-3">Claro/Oscuro</button>
-          <h2 class="text-center text-lower"><i>Servicios</i></h2>
+          <h2 class="text-center text-lower" aria-label="Servicios"><i>Servicios</i></h2>
         </div>
       </section>
       <!--Inicio de las cards-->
@@ -60,6 +60,7 @@
         <!--Card-->
         <div id="card-coloracion" class="col-md-4 col-sm-12">
           <div class="card linkear session">
+            <!--<a href="#html" aria-label="Coloracion">-->
            <img src="./assets/media/img/Coloracion.jpg" class="card-img-top img-thumbnail" alt="imagen coloracion al pelo"></a>
             <div class="card-body">
               <h4 class="card-title text-center"><span><b style="text-align: justify;">Coloración:</b></span><br>Nivel Profesional </h4>
@@ -71,7 +72,7 @@
         <!--Card-->
         <div id="card-nupcial" class="col-md-4 col-sm-12">
           <div class="card linkear session">
-
+            <!--<a href="#html" aria-label="Reparacion de Cabello">-->
               <img src="./assets-categorias/media/img/reparcabello.jpg" class="card-img-top img-thumbnail" alt="imagen peinado de novia">
             </a>
             <div class="card-body">
@@ -84,6 +85,7 @@
          <!--Card-->
         <div id="card-coloracion" class="col-md-4 col-sm-12">
           <div class="card linkear session">
+            <!--<a href="#html" aria-label="Mechas">-->
             <img src="./assets-categorias/media/img/mechas" class="card-img-top img-thumbnail" alt="imagen coloracion al pelo"></a>
             <div class="card-body">
               <h4 class="card-title text-center"><span><b style="text-align: justify;">Mechas y Reflejos:</b></span><br>Mechas Tradicionales </h4>
@@ -97,7 +99,7 @@
     <!--Fin de Productos-->
     
       <!--Fotos con efecto masonry-->
-        <section class="paypal session">
+        <section class="paypal session" aria-label="Medios de Pago">
           <div class="slider">
               <div class="slide-track">
                   <div class="slide">
@@ -191,16 +193,16 @@
           <!--Fin fotos con efecto masonry-->
     	
         <!-- Footer -->
-    <footer id="footer" class="footer mt-auto py-3 bg-light">
+    <footer id="footer" class="footer mt-auto py-3 bg-light" aria-label="Pie de Pagina">
     	<!--
     <footer class="footer mt-5 p-3">
     	-->
       <div id="pie-pagina" class="container">
 
             <ul class="list-unstyled">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#footer">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
             <div>
             	    <p id="pe" class="text-dark">Síguenos en nuestras redes. </p>
