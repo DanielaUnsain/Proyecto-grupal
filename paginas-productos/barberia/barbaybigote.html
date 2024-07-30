@@ -10,16 +10,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-     <link rel="stylesheet" href="./assets/css/style.css">
+     <link rel="stylesheet" href="/assets-categorias/css/stylecat.css">
     <link rel="shortcut icon" href="#" type="image/x-icon">
-    <title>"Productos barberia"</title>
+    <title>"Barba y Bigote"</title>
   </head>
   <body>
     <!----HEADER----->
     <header id="encabezado">
       <nav  id="navbar" class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top" aria-label="Main navigation">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html" aria-label="Inicio"><span>
+          <a class="navbar-brand" href="/index.html" aria-label="Inicio"><span>
           	<img src="#" alt="logo" >
               </span>
             </a>
@@ -29,16 +29,16 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#footer">NOSOTROS</a>
+                <a class="nav-link" href="#footer" aria-label="Ir a Nosotros">NOSOTROS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#productos-top" aria-label="Ir a Destacados">PRODUCTOS DESTACADOS</a>
+                <a class="nav-link" href="#productos-top" aria-label="Ir a Productos Destacados">PRODUCTOS DESTACADOS</a>
               </li>
               <li>
-                <a class="nav-link" href="categorias.html" aria-label="Ir a Categorias">CATEGORIAS</a>
+                <a class="nav-link" href="/categorias.html" aria-label="Ir a Categorias">CATEGORIAS</a>
               </li>
               <li>
-                <a class="nav-link" href="contacto.html" aria-label="Ir a Contacto">CONTACTO</a>
+                <a class="nav-link" href="/contacto.html" aria-label="Ir a Contacto">CONTACTO</a>
               </li>
             </ul>
           </div>
@@ -46,147 +46,143 @@
       </nav>
 
     </header>
-     
-    <!--------PRODUCTOS------------->
+
+    <!--------PRODUCTO------------->
     <section id="productos-top" class="container session">
       <section id="productos-titulo" class="row session">
         <div class="col-sm-12">
-            <button id="toggleDarkMode" class="btn btn-secondary ml-3">Claro/Oscuro</button>
-          <h2 class="text-center text-lower" aria-label="Productos - Servicios"><i>Productos - Servicios</i></h2>
+          <button id="toggleDarkMode" class="btn btn-secondary ml-3">Claro/Oscuro</button>
         </div>
       </section>
-      <!--Inicio de las cards-->
+      <!--Inicio de la card-->
       <section id="productos-cards" class="row session">
         <!--Card-->
         <div id="card-corte" class="col-md-4 col-sm-12">
-          <div class="card linkear session">
-           <a href="paginas-productos/barberia/afeitadonavaja.html" aria-label="Corte con navaja">
-            <img src="./assets/media/img/CorteNavaja.jpg" class="card-img-top img-thumbnail" alt="imagen barberia">
-            </a>
-            <div class="card-body">
-              <h4 class="card-title text-center"><span><b style="text-align: justify;">Afeitado a navaja:</b></span><br>Elegancia y Precisión</h4>
-              <p class="card-text" style="text-align: justify;"> Disfruta de un afeitado a navaja profesional que combina precisión y confort.
-              </p>
+            <div class="card linkear session">
+              <img src="/assets-categorias/media/img/tratbarbabigote.jpg" class="card-img-top img-thumbnail" alt="imagen barba y bigote">
+              </a>
+              <div class="card-body">
+                <h4 class="card-title text-center"><span><b style="text-align: justify;">Tratamiento de Barba y Bigote:</b></span><br>Cuidado e hidratación</h4>
+                <p class="card-text" style="text-align: justify;"> El Tratamiento de Barba y Bigote en nuestra barbería es una experiencia integral diseñada para cuidar, nutrir y estilizar tu vello facial.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <!--Card-->
-        <div id="card-nupcial" class="col-md-4 col-sm-12">
-          <div class="card linkear session">
-           <a href="paginas-productos/barberia/barbaybigote.html" aria-label="Tratamiento de bigote y barba">
-              <img src="./assets-categorias/media/img/tratbarbabigote.jpg" class="card-img-top img-thumbnail" alt="imagen peinado de novia">
-            </a>
-            <div class="card-body">
-              <h4 class="card-title text-center"><span><b style="text-align: justify;">Tratamiento de Barba y Bigote:</b></span><br>Cuidado e hidratación</h4>
-              <p class="card-text" style="text-align: justify;"> Servicios especializados en el cuidado y mantenimiento de la barba y el bigote para mantenerlos bien arreglados y saludables.
+          
+          <!-- Sección de Beneficios y Recomendaciones -->
+        <div id="info-adicional" class="col-md-8 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title" aria-label="Beneficios">Beneficios</h5>
+                <ul class="list-unstyled">
+                  <li><i class="fas fa-check"></i> <strong>Hidratación y Nutrición:</strong> Utilizamos aceites y bálsamos específicos que hidratan profundamente el vello facial y la piel, previniendo la sequedad y la descamación.</li>
+                  <li><i class="fas fa-check"></i> <strong>Acondicionamiento del Vello:</strong> Los tratamientos acondicionan el vello facial, dejándolo más suave y manejable, lo que facilita el peinado y la estilización.</li>
+                  <li><i class="fas fa-check"></i> <strong>Fortalecimiento del Vello:</strong> Los productos utilizados en nuestro tratamiento ayudan a fortalecer el vello facial, promoviendo un crecimiento más sano y resistente.</li>
+                  <li><i class="fas fa-check"></i> <strong>Relajación y Bienestar:</strong> La experiencia en sí es relajante y rejuvenecedora, proporcionándote un momento de cuidado personal que revitaliza tanto tu barba como tu espíritu.</li>
+                </ul>
+                <h5 class="card-title mt-3" aria-label="Recomendaciones">Recomendaciones para el Cliente</h5>
+                <ul class="list-unstyled">
+                  <li><i class="fas fa-info-circle"></i> Realiza el tratamiento regularmente para mantener los resultados.</li>
+                  <li><i class="fas fa-info-circle"></i> Utiliza productos específicos para el cuidado de la barba en casa, como aceites, bálsamos y champús especializados, para mantener la hidratación y la salud del vello facial.</li>
+                  <li><i class="fas fa-info-circle"></i> Consulta con tu barbero para personalizar el cuidado según tus necesidades.</li>
+                  <li><i class="fas fa-info-circle"></i> Aplica aceites o bálsamos de barba diariamente para mantener el vello suave y la piel hidratada.</li>
+                </ul>
+              </div>
             </div>
-            
           </div>
-        </div>
-         <!--Card-->
-        <div id="card-coloracion" class="col-md-4 col-sm-12">
-          <div class="card linkear session">
-            <a href="paginas-productos/barberia/cabelloperso.html" aria-label="Corte personalizado">
-            <img src="./assets-categorias/media/img/cortesperso.jpg" class="card-img-top img-thumbnail" alt="imagen coloracion al pelo"></a>
-            </a>
-            <div class="card-body">
-              <h4 class="card-title text-center"><span><b style="text-align: justify;">Corte de Cabello y Estilo Personalizado:</b></span><br>Nivel Profesional </h4>
-              <p class="card-text" style="text-align: justify;"> Servicios de cortes de cabello que van más allá del simple corte estándar, adaptándose a las preferencias y estilos personales de cada cliente.
-            </div>
-           </div>
-        </div>
+          
       </section>
-      <!--Fin de las cards-->
+      <!--Fin de la card-->
     </section>
     <!--Fin de Productos-->
     
       <!--Fotos con efecto masonry-->
-        <section class="paypal session" aria-label="Medios de Pago">
+        <section class="paypal session" aria-label="Medios de pago">
           <div class="slider">
               <div class="slide-track">
                   <div class="slide">
-                      <img src="./assets/media/img/mediosDePago/amex@2x.png" height="40" width="100" alt="">
+                      <img src="/assets/media/img/mediosDePago/amex@2x.png" height="40" width="100" alt="">
                   </div>
                   <div class="slide">
-                      <img src="./assets/media/img/mediosDePago/argencard@2x.png" height="40" width="100" alt="">
+                      <img src="/assets/media/img/mediosDePago/argencard@2x.png" height="40" width="100" alt="">
                   </div>
                   <div class="slide">
-                      <img src="./assets/media/img/mediosDePago/cabal@2x.png" height="40" width="100" alt="">
+                      <img src="/assets/media/img/mediosDePago/cabal@2x.png" height="40" width="100" alt="">
                   </div>
                   <div class="slide">
-                      <img src="./assets/media/img/mediosDePago/cabaldebit@2x.png" height="40" width="100" alt="">
+                      <img src="/assets/media/img/mediosDePago/cabaldebit@2x.png" height="40" width="100" alt="">
                   </div>
                   <div class="slide">
-                      <img src="./assets/media/img/mediosDePago/tarjeta-naranja@2x.png" height="40" width="100" alt="">
+                      <img src="/assets/media/img/mediosDePago/tarjeta-naranja@2x.png" height="40" width="100" alt="">
                   </div>
                   <div class="slide">
-                      <img src="./assets/media/img/mediosDePago/visa@2x.png" height="40" width="100" alt="">
+                      <img src="/assets/media/img/mediosDePago/visa@2x.png" height="40" width="100" alt="">
                   </div>
                   <div class="slide">
-                      <img src="./assets/media/img/mediosDePago/visadebit@2x.png" height="40" width="100" alt="">
+                      <img src="/assets/media/img/mediosDePago/visadebit@2x.png" height="40" width="100" alt="">
                   </div>
                   <div class="slide">
-                      <img src="./assets/media/img/mediosDePago/pagofacil@2x.png" height="40" width="100" alt="">
+                      <img src="/assets/media/img/mediosDePago/pagofacil@2x.png" height="40" width="100" alt="">
                   </div>
                   <div class="slide">
-                      <img src="./assets/media/img/mediosDePago/rapipago@2x.png" height="40" width="100" alt="">
+                      <img src="/assets/media/img/mediosDePago/rapipago@2x.png" height="40" width="100" alt="">
                   </div>
                   <div class="slide">
-                      <img src="./assets/media/img/mediosDePago/amex@2x.png" height="40" width="100" alt="">
+                      <img src="/assets/media/img/mediosDePago/amex@2x.png" height="40" width="100" alt="">
                   </div>
                   <div class="slide">
-                      <img src="./assets/media/img/mediosDePago/cabaldebit@2x.png" height="40" width="100" alt="">
+                      <img src="/assets/media/img/mediosDePago/cabaldebit@2x.png" height="40" width="100" alt="">
                   </div>
                   <div class="slide">
-                      <img src="./assets/media/img/mediosDePago/tarjeta-naranja@2x.png" height="40" width="100" alt="">
+                      <img src="/assets/media/img/mediosDePago/tarjeta-naranja@2x.png" height="40" width="100" alt="">
                   </div>
                   <div class="slide">
-                      <img src="./assets/media/img/mediosDePago/visa@2x.png" height="40" width="100" alt="">
+                      <img src="/assets/media/img/mediosDePago/visa@2x.png" height="40" width="100" alt="">
                   </div>
                   <div class="slide">
-                      <img src="./assets/media/img/mediosDePago/visadebit@2x.png" height="40" width="100" alt="">
+                      <img src="/assets/media/img/mediosDePago/visadebit@2x.png" height="40" width="100" alt="">
                   </div>
                   <div class="slide">
-                      <img src="./assets/media/img/mediosDePago/amex@2x.png" height="40" width="100" alt="">
+                      <img src="/assets/media/img/mediosDePago/amex@2x.png" height="40" width="100" alt="">
                   </div>
                   <div class="slide">
-                      <img src="./assets/media/img/mediosDePago/argencard@2x.png" height="40" width="100" alt="">
+                      <img src="/assets/media/img/mediosDePago/argencard@2x.png" height="40" width="100" alt="">
                   </div>
                   <div class="slide">
-                      <img src="./assets/media/img/mediosDePago/cabal@2x.png" height="40" width="100" alt="">
+                      <img src="/assets/media/img/mediosDePago/cabal@2x.png" height="40" width="100" alt="">
                   </div>
                   <div class="slide">
-                      <img src="./assets/media/img/mediosDePago/cabaldebit@2x.png" height="40" width="100" alt="">
+                      <img src="/assets/media/img/mediosDePago/cabaldebit@2x.png" height="40" width="100" alt="">
                   </div>
                   <div class="slide">
-                      <img src="./assets/media/img/mediosDePago/tarjeta-naranja@2x.png" height="40" width="100" alt="">
+                      <img src="/assets/media/img/mediosDePago/tarjeta-naranja@2x.png" height="40" width="100" alt="">
                   </div>
                   <div class="slide">
-                      <img src="./assets/media/img/mediosDePago/visa@2x.png" height="40" width="100" alt="">
+                      <img src="/assets/media/img/mediosDePago/visa@2x.png" height="40" width="100" alt="">
                   </div>
                   <div class="slide">
-                      <img src="./assets/media/img/mediosDePago/visadebit@2x.png" height="40" width="100" alt="">
+                      <img src="/assets/media/img/mediosDePago/visadebit@2x.png" height="40" width="100" alt="">
                   </div>
                   <div class="slide">
-                      <img src="./assets/media/img/mediosDePago/pagofacil@2x.png" height="40" width="100" alt="">
+                      <img src="/assets/media/img/mediosDePago/pagofacil@2x.png" height="40" width="100" alt="">
                   </div>
                   <div class="slide">
-                      <img src="./assets/media/img/mediosDePago/rapipago@2x.png" height="40" width="100" alt="">
+                      <img src="/assets/media/img/mediosDePago/rapipago@2x.png" height="40" width="100" alt="">
                   </div>
                   <div class="slide">
-                      <img src="./assets/media/img/mediosDePago/amex@2x.png" height="40" width="100" alt="">
+                      <img src="/assets/media/img/mediosDePago/amex@2x.png" height="40" width="100" alt="">
                   </div>
                   <div class="slide">
-                      <img src="./assets/media/img/mediosDePago/cabaldebit@2x.png" height="40" width="100" alt="">
+                      <img src="/assets/media/img/mediosDePago/cabaldebit@2x.png" height="40" width="100" alt="">
                   </div>
                   <div class="slide">
-                      <img src="./assets/media/img/mediosDePago/tarjeta-naranja@2x.png" height="40" width="100" alt="">
+                      <img src="/assets/media/img/mediosDePago/tarjeta-naranja@2x.png" height="40" width="100" alt="">
                   </div>
                   <div class="slide">
-                      <img src="./assets/media/img/mediosDePago/visa@2x.png" height="40" width="100" alt="">
+                      <img src="/assets/media/img/mediosDePago/visa@2x.png" height="40" width="100" alt="">
                   </div>
                   <div class="slide">
-                      <img src="./assets/media/img/mediosDePago/visadebit@2x.png" height="40" width="100" alt="">
+                      <img src="/assets/media/img/mediosDePago/visadebit@2x.png" height="40" width="100" alt="">
                   </div>
               </div>
           </div>
@@ -202,9 +198,9 @@
       <div id="pie-pagina" class="container">
 
             <ul class="list-unstyled">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="/index.html">Home</a></li>
                 <li><a href="#footer">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="/contacto.html">Contacto</a></li>
             </ul>
             <div>
             	    <p id="pe" class="text-dark">Síguenos en nuestras redes. </p>
@@ -238,6 +234,6 @@
     <!-- Separate Popper and Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
-    <script src="./assets/js/scripts.js"></script>
+    <script src="/assets/js/scripts.js"></script>
   </body>
 </html>

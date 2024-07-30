@@ -176,4 +176,34 @@
     background-color: #ffffff;
     color: #000000;
   }
+
+  /* Estilo por defecto para el card */
+.card {
+  background-color: #ffffff; /* Fondo blanco por defecto */
+  color: #000000; /* Texto negro por defecto */
+}
+
+/* Modo alto contraste */
+@media (forced-colors: active) {
+  .card {
+    background-color: #000000; /* Fondo negro en modo alto contraste */
+    color: #ffffff; /* Texto blanco en modo alto contraste */
+  }
+
+  .card-body {
+    border: 1px solid #ffffff; /* Borde blanco para mayor visibilidad */
+  }
+
+  .card-title {
+    color: #ffffff; /* Títulos en blanco */
+  }
+
+  .list-unstyled li {
+    color: #ffffff; /* Texto de lista en blanco */
+  }
+
+  .fas {
+    color: #ffffff; /* Iconos en blanco */
+  }
+}
   
